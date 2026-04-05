@@ -37,7 +37,7 @@ export const ProductModal = ({
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-40 flex items-center justify-center p-4">
+    <div className="fixed inset-0 z-40 flex items-center justify-center p-3 sm:p-4">
       {/* Backdrop */}
       <div
         className="absolute inset-0 bg-black/40 backdrop-blur-sm"
@@ -47,11 +47,11 @@ export const ProductModal = ({
       {/* Modal */}
       <div
         className="
-        relative w-full max-w-md
+        relative w-[calc(100%-1.5rem)] max-w-md
         bg-white dark:bg-gray-900
         rounded-2xl shadow-2xl
         border border-gray-200 dark:border-gray-700
-        p-6 z-50
+        p-5 sm:p-6 z-50
         max-h-[90vh] overflow-y-auto
       "
       >

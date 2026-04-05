@@ -16,7 +16,7 @@ export const SearchBar = ({
   filteredCount,
 }: SearchBarProps) => {
   return (
-    <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
+    <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
       <div className="relative flex-1 w-full">
         <Search
           size={16}
@@ -46,7 +46,7 @@ export const SearchBar = ({
           </button>
         )}
       </div>
-      <p className="text-sm text-gray-500 dark:text-gray-400 whitespace-nowrap">
+      <p className="text-sm text-gray-500 dark:text-gray-400 sm:whitespace-nowrap">
         {value
           ? `${filteredCount} of ${totalCount} products`
           : `${totalCount} product${totalCount !== 1 ? "s" : ""}`}

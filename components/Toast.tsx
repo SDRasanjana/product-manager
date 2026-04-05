@@ -23,14 +23,14 @@ const backgrounds = {
 
 export const Toast = ({ toasts }: ToastProps) => {
   return (
-    <div className="fixed bottom-4 right-4 z-50 flex flex-col gap-2 pointer-events-none">
+    <div className="fixed bottom-4 left-1/2 z-50 flex w-[calc(100%-2rem)] -translate-x-1/2 flex-col gap-2 pointer-events-none sm:left-auto sm:right-4 sm:w-auto sm:translate-x-0">
       {toasts.map((toast) => (
         <div
           key={toast.id}
           className={`
             flex items-center gap-3 px-4 py-3 rounded-xl border shadow-lg
             text-sm font-medium text-gray-800 dark:text-gray-100
-            pointer-events-auto min-w-60 max-w-[320px]
+            pointer-events-auto w-full min-w-0 sm:min-w-60 sm:max-w-[320px]
             animate-slide-in
             ${backgrounds[toast.type]}
           `}
