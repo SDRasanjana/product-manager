@@ -19,6 +19,7 @@ A clean, full-featured product management interface built with Next.js, TypeScri
 - Inventory stats dashboard
 - Fully responsive (mobile-first)
 - Skeleton loading states
+- Confirmation dialogue
 
 ## Setup
 
